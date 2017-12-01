@@ -5,10 +5,10 @@ header{
 }
 
 /*flexbox*/
-container{
+.container{
   display:flex;
   justify-content:flex-start; /*controls the x axis*/
-  align-items:flex-start; /*controls the y axis*/
+  align-items:center; /*controls the y axis*/
   height: 400px;
 }
 
@@ -16,6 +16,7 @@ container{
   width: 50%;
   height:400px;
   background-color:green;
+  font-size:48px;
 }
 
 .right{
