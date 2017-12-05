@@ -47,7 +47,7 @@ body {
      color: #000;
      font-size: 12px;
      line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
+     font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -59,39 +59,113 @@ body {
 #container {
   width: 960px;
   margin: auto;
+  background-color: #f0efef;
 }
 
 header {
-  background-color:darkblue;
+  background-color:#033048;
   color:white;
   display:flex;
-  justify-content:flex-start; /*controls the x axis*/
-  align-items:center; /*controls the y axis*/
-  height: 100px;
+  justify-content:flex-start;
+  align-items:center;
+  height: 60px;
 }
 
-h1.header_nav{
+.title{
+  width:90%;
+  font-size:30px;
+}
+
+.nav_links{
   width:50%;
-  font-size:40px;
+  font-size:20px;
 }
 
-nav.header_nav{
-  width:50%;
-}
-
-a:link, a:visited, a:hover, a:active{
-  color:yellow;
+a:link, a:visited, a:active{
+  color:#f9e42e;
   text-decoration: none;
 }
 
+a:hover{
+  text-decoration: underline;
+}
+
+#body{
+  width: 960px;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+}
+
+#header_txt{
+  font-size: 40px;
+  font-weight: semibold;
+  color:#033048;
+}
+
+.leftMain{
+  width:70%;
+  font-size: 24px;
+  margin-right:30px;
+  color: #606161;
+}
+
+.picture_center{
+  width:600px;
+}
+
+.sidebar, #link_side{
+  width:20%;
+  font-size:24px;
+  font-weight:light;
+  color:#033048;
+  text-decoration: none;
+}
+
+h1.bold {
+  font-weight:Extrabold;
+  font-size:32px;
+}
+
+.about_txt{
+  font-size: 22px;
+  font-weight:light;
+}
+
+.learnmore{
+  font-size: 22px;
+  font-weight:semibold;
+}
+
+.ad_pic{
+  padding-top:10px;
+  margin-bottom:550px;
+  width:100px;
+}
+
+#signUp{
+  background-color:#f9e42e;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.signUp{
+  padding-left:30px;
+  padding-right:30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  background-color:#033048;
+  color:white;
+  border-radius:5px;
+}
+
 footer {
-  background-color:black;
-
+  background-color:#121212;
+  align-items:center;
+  padding-left:50%;
+  margin:0px;
+  height:100px;
+  color:white;
 }
-
-.body{
-}
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
