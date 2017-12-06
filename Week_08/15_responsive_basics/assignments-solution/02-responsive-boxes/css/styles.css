@@ -1,0 +1,85 @@
+body {
+  margin: 25px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  background-color: lightblue;
+  float: left;
+  height: 80px;
+  list-style-type: none;
+  padding: 0;
+  margin: 1%;
+  width: 99%;
+}
+
+@media screen and (min-width: 480px) {
+  nav li {
+    margin: 1%;
+    width: 8%;
+  }
+}
+
+main section {
+  background-color: limegreen;
+  float: left;
+  height: 60px;
+  margin: 1%;
+  width: 98%;
+}
+
+@media screen and (min-width: 480px) {
+  main section {
+    margin: 1%;
+    width: 23%;
+  }
+}
+
+div {
+  background-color: teal;
+  float: left;
+  height: 360px;
+  margin: 1%;
+  width: 98%;
+}
+
+@media screen and (min-width: 480px) {
+  div {
+    margin: 1%;
+    width: 73%;
+  }
+}
+
+aside {
+  background-color: lightgray;
+  float: left;
+  height: 480px;
+  margin: 1%;
+  width: 98%;
+}
+
+@media screen and (min-width: 480px) {
+  aside {
+    margin: 1%;
+    width: 23%;
+  }
+}
+
+footer section {
+  background-color: pink;
+  float: left;
+  height: 60px;
+  margin: 1%;
+  width: 98%;
+}
+
+@media screen and (min-width: 480px) {
+  footer section {
+    margin: 1%;
+    width: 31.33%;
+  }
+}

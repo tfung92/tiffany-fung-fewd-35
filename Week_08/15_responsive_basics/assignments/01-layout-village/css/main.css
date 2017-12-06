@@ -1,0 +1,172 @@
+/* Globals */
+
+body {
+  font-size: 15px;
+  margin: 0;
+}
+
+h1 {
+  padding-top: 10px;
+}
+
+div {
+  padding-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.clearfix:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+
+/*
+  1- Responsive layout with one break point
+  This is a mobile first approach, so we have the .item-mq1 styled for mobile
+  The desktop look is applied once the min-width of 480px is reached in the browser
+*/
+.item-mq1 {
+  background-color: lightblue;
+  float: left;
+  height: 125px;
+  margin: 1% 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .item-mq1 {
+    margin: 1%;
+    width: 23%;
+  }
+}
+
+/*
+  2- Responsive layout with sidebar
+  Notice have you have to calculate for two box models - one at each break point
+  Mobile first approach, see how the styles cascade and which are overridden
+*/
+
+.example-body {
+  background-color: orange;
+  float: left;
+  height: 250px;
+  margin: 1% 0;
+  padding: 0;
+  width: 98%;
+}
+
+@media screen and (min-width: 480px) {
+  .example-body {
+    margin: 1%;
+    width: 73%;
+  }
+}
+
+.example-sidebar {
+  background-color: lightgray;
+  float: left;
+  height: 250px;
+  margin: 1% 0;
+  padding: 0;
+  width: 98%;
+}
+
+@media screen and (min-width: 480px) {
+  .example-sidebar {
+    margin: 1%;
+    width: 23%;
+  }
+}
+
+/*
+  3- Responsive grid with two breakpoints
+  Notice have you have to calculate for three box models now - one at each break point
+*/
+.item-mq2 {
+  background-color: pink;
+  float: left;
+  height: 125px;
+  margin: 1% 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .item-mq2 {
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .item-mq2 {
+    margin: 1%;
+    width: 23%;
+  }
+}
+
+/*
+ display: inline-block is a crude responsive method
+ it only works based on the size of the containers width
+ the drawback is that this layout doesnt really have breakpoints
+ it can work well with a grid but not much else
+*/
+.container-ib {
+  text-align: center;
+}
+
+.item {
+  height: 100px;
+  padding: 25px;
+  width: 100px;
+}
+
+.item-ib {
+  background-color: limegreen;
+  display: inline-block;
+}
+
+.big-text {
+  font-size: 24px;
+  margin: 0 25px 25px 25px;
+}
+
+p {
+  margin: 12.5px;
+}
+
+
+/*
+  3- Responsive grid with two breakpoints
+  Notice have you have to calculate for three box models now - one at each break point
+*/
+.container-mq3 {
+  font-size: 15px;
+}
+
+.item-mq3 {
+  background-color: maroon;
+  float: left;
+  height: 10em;
+  margin: 0.5em 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .item-mq3 {
+    margin: 0.2em;
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .item-mq3 {
+    margin: 0.5em;
+    width: 23%;
+  }
+}

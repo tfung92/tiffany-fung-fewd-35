@@ -1,0 +1,42 @@
+/* ***
+ * Base page styles
+ */
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    background: #000;
+    color: #eee;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+img {
+    max-width: 200px;
+}
+
+/* ***
+ * Flexbox styles
+ */
+
+.animals {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.animal {
+    background: #eee;
+    margin: 0.5em;
+    padding: 1em;
+}
