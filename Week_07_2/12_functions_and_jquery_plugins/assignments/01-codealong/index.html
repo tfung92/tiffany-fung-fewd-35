@@ -1,13 +1,28 @@
 <!doctype html>
 <html>
 <head>
-  <title>Image Selector / Switcher</title>
-  <link rel="stylesheet" href="css/normalize.css">
+<!--  <link rel="stylesheet" href="css/normalize.css">  -->
   <link rel="stylesheet" href="css/main.css">
+  <title>National Park Shuffle</title>
 </head>
 <body>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<header>
+  <form class="select-natPark">
+    <select class="select-list">
+      <option value="acadia">Acadia</option>
+      <option value="banff">Banff</option>
+      <option value="zion">Zion</option>
+  </form>
+  <input type="submit" class="submitButton"></input>
+</header>
+
+  <section class="natParkResults">
+    <div class="natParkMessage">You have selected: </div>
+    <div class="natParkImage"></div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
