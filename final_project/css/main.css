@@ -1,6 +1,7 @@
 .nav_header{
-  height:60px;
-  display:inline;
+  height:90px;
+  display:flex;
+  align-items:center;
 }
 
 .logo{
@@ -34,8 +35,9 @@ body{
   margin:0px;
   display:flex;
   align-items:center;
-  justify-content:center;
-  width:85%;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  width:90%;
   background-color:blue;
 }
 
@@ -50,5 +52,11 @@ body{
 
 .trend_container{
   height:100px;
-  width:85%
+  width:85%;
+  background-color:black;
+}
+
+.trendFrame{
+  width: 85%;
+  height: 300px;
 }

@@ -11,3 +11,12 @@ $.ajax({
  // do something else
  }
 });
+
+
+$(document).ready(function(){
+    $("a").click(function(e) {
+        e.preventDefault();
+
+        $("#someFrame").attr("src", $(this).attr("href"));
+    })
+});
