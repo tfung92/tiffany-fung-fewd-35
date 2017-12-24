@@ -1,5 +1,11 @@
 .nav_header{
-  height:40px;
+  height:60px;
+  display:inline;
+}
+
+.logo{
+  height:70px;
+  width:120px;
 }
 
 .container{
