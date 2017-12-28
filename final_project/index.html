@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" media="screen and (min-width: 1200px)" href="css/1200bigscreen.css">
+  <link rel="stylesheet" href="css/flickity.min.css" media="screen">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -22,10 +23,10 @@
 <!--SET LEFT HAND NAVIGATION PANEL WITH LINKS TO DIFFERENT PAGES-->
       <nav class = "left_hand_nav">
         <p>Welcome, User! </br>Data Refreshed:</p>
-        <a href="" class = "dashLink" id = "nav_links">Dashboard</a></br>
-        <a href="" class = "NotifLink" id = "nav_links">Notification</a></br>
-        <a href="" class = "SettingLink" id = "nav_links">Settings</a></br>
-        <a href="" class = "LogOutLink" id = "nav_links">Logout</a><br>
+        <button class = "dashLink"><a href="" id = "nav_links">Dashboard</a></button></br>
+        <button class = "NotifLink"><a href="" id = "nav_links">Notification</a></button></br>
+        <button class = "SettingLink"><a href="" id = "nav_links">Settings</a></button></br>
+        <button class = "LogOutLink"><a href="" id = "nav_links">Logout</a></button><br>
       </nav>
 <!--MAIN CENTER CONTAINER CONTAINS ALERT ITEM SECTION CONTAINING ITEM BUCKETS AND TREND GRAPH CONTAINER-->
   <div class = "center_container">
@@ -40,13 +41,18 @@
 <!--MAIN LOWER SECTION OF PAGE CONTAINS PROGRESS TREND GRAPHS-->
       <section class = "trend_container">
         <p>TREND GRAPH HERE!</p>
-        <iframe class ="trendFrame"></iframe>
+        <div class = "js-flickity">
+          data-flickity-options='{ "wrapAround": true }'>
+          <iframe class ="cell1">iFrame1</iframe>
+          <iframe class ="cell2">iFrame2</iframe>
+        </div>
       </section>
     </div>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="js/flickity.pkgd.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

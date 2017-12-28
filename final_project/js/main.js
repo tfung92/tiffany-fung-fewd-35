@@ -16,7 +16,13 @@ $.ajax({
 $(document).ready(function(){
     $("a").click(function(e) {
         e.preventDefault();
-
         $("#someFrame").attr("src", $(this).attr("href"));
     })
+});
+
+//Trend graph carousel
+$('.trend_container').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true
 });
