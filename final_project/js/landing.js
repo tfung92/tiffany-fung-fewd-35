@@ -3,17 +3,25 @@ $(document).ready(function(){
 //declare local variables
     var id = $("#id").val();
     var password = $("#password").val();
-// Checking for blank fields OR invalid id format.
-    if( id =='' || password ==''){
-      $('input[type="text"],input[type="password"]').css("border","2px solid red");
-      $('input[type="text"],input[type="password"]').css("box-shadow","0 0 3px red");
-      alert("Please fill all fields!");
-    }else if(id != '^[A-Za-z]{3}[0-9]{3}'){
+// Checking for blank ID field.
+    if( id ==''){
       $('input[type="text"]').css("border","2px solid red");
       $('input[type="text"]').css("box-shadow","0 0 3px red");
-      alert("Enter Valid ID!");
+      alert("Please Your ID");
+// Checking for invalid id format.
+/*    }else if(id != '^[A-Za-z]{3}[0-9]{3}'){
+      $('input[type="text"]').css("border","2px solid red");
+      $('input[type="text"]').css("box-shadow","0 0 3px red");
+      alert("Enter Valid ID");
+*/
+// Checking for blank password field.
+    }else if(password ==''){
+      $('input[type="password"]').css("border","2px solid red");
+      $('input[type="password"]').css("box-shadow","0 0 3px red");
+      alert("Enter Your Password");
+// Successfully log in
     }else {
-      $.post("login.php",{ id1: id, password1:password},
+    /*  $.post("login.php",{ id1: id, password1:password},
         function(data) {
           if(data=='Invalid ID.') {
             $('input[type="text"]').css({"border":"2px solid red","box-shadow":"0 0 3px red"});
@@ -29,7 +37,8 @@ $(document).ready(function(){
           } else{
             alert(data);
           }
-      });
+      });*/
+
     }
   });
 });
