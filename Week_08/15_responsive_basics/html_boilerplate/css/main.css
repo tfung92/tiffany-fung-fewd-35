@@ -95,16 +95,79 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
+   breakpoints:
+   768px Tablets
+   575px phone
    ========================================================================== */
+.uber-container-3-items{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items: flex-start;
+  margin:10px;
+}
 
+.uber-container{
+  display:flex;
+  flex-direction:column;
+}
 
+@media (min-width:576px) and (max-width:1099px){
+  .uber-container{
+    flex-direction:row;
+  }
+}
 
+/*tablet*/
+@media (min-width:576px) and (max-width:1099px){
+  .uber-container-3-items{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items: flex-start;
+  }
+}
 
+/*laptop*/
+@media (min-width:1100px){
+  .uber-container-3-items{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items: flex-start;
+  }
+}
 
+@media (min-width:576px) and (max-width:1099px){
+  .uber-container{
+    flex-direction:column;
+  }
+}
 
+.uber-container:nth-child(1){
+  background-color:green;
+}
 
+.uber-container2:nth-child(2){
+  background-color:blue;
+}
 
+.uber-container3:nth-child(3){
+  background-color:red;
+}
 
+.uber-img1, .uber-img2, .uber-img3{
+  height:120px;
+  width:120px;
+}
+
+.uber-img1{
+  flex-grow: 1;
+}
+
+.uber_txt1{
+  flex-grow: 5; /*figure out how many times you want this container to grow in comparison to the other container in the flex*/
+}
 
 
 
