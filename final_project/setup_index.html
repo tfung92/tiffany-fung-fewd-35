@@ -14,7 +14,10 @@
 <body>
 <!--steps is the container for the progress bar-->
   <div id="steps"></div>
-  <div class = "main_body">
+<!--container containing all selection questions-->
+  <div class = "main-container">
+<!--container containing the role selection buttons-->
+  <div class = "role-selection" id = "role-select">
     <h2>To get started, please answer a few questions to customize your dashboard.</h2>
     <button>
       <h3>Do you oversee a department?</h3>
@@ -29,6 +32,46 @@
       <p>Do you desire to see your specific data details</p>
     </button>
   </div>
+
+<!--container containing the department selection box-->
+  <div class = "dept-selection" id = "dept-select">
+    <h2>Select your department in order to focus your dashboard data.</h2>
+    <div class = "selection-container">
+    <select multiple class = "multi-select-dept" id = "multi-select">
+      <option value="cc">Credit Card</option>
+      <option value="cml_bank">Commercial Bank</option>
+      <option value="mktg">Marketing</option>
+      <option value="hr">HR</option>
+    </select>
+    <button class = "add-button" id = "add-btn">Add</button>
+  </div>
+    <output class = "display-box" id = "display">You have selected: </br></output>
+  </div>
+
+<!--container containing the source selection box-->
+  <div class = "src-selection" id = "src-select">
+    <h2>Select a source if you would like to further focus your dashboard data.</h2>
+    <div class = "selection-container">
+    <select multiple class = "multi-select-src" id = "multi-select">
+      <option value="src1">Source 1</option>
+      <option value="src2">Source 2</option>
+      <option value="src3">Source 3</option>
+      <option value="src4">Source 4</option>
+    </select>
+    <button class = "add-button" id = "add-btn">Add</button>
+  </div>
+    <output class = "display-box" id = "display">You have selected: </br></output>
+  </div>
+  <div class = "footer=-buttons" id = "footer-btn">
+  <button class = "back-pg">Previous Page</button>
+  <button class = "nxt-pg">Next Page</button>
+</div>
+  <!--container for finish page-->
+    <div class = "finish-pg" id = "finish-pg">
+      <h2>The setup is complete!</h2>
+      <button class = "nxt-pg">Enter Dashboard</button>
+    </div>
+</div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

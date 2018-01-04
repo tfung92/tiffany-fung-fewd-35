@@ -3,7 +3,7 @@
   margin:30px;
 }
 
-.main_body{
+.main-container{
   border-style:solid;
   border-radius: 10px;
   margin-left:2%;
@@ -15,3 +15,21 @@
 button{
   padding:10px;
 }
+
+/*
+.role-selection{
+  display:none;
+}
+*/
+
+/*
+.dept-selection{
+  display:none;
+}
+*/
+
+/*
+.src-selection{
+  display:none;
+}
+*/
